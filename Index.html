@@ -24,6 +24,7 @@
             border: 1px solid #000;
             padding: 8px;
             text-align: left;
+            width: 80%;
         }
         .summary th, .summary td {
             text-align: right;
@@ -33,6 +34,9 @@
         }
         .align-right {
             text-align: right;
+        }
+        .subscription-details {
+            padding-bottom: 15px;
         }
     </style>
 </head>
@@ -79,6 +83,13 @@
         </tr>
     </table>
     
+    <table class="subscription-details">
+        <tr>
+            <th>Subscription AOI Size (km<sup>2</sup>):</th>
+            <td><input type="number" id="subscription-aoi-size" /></td>
+        </tr>
+    </table>
+
     <table class="product-details">
         <thead>
             <tr>
@@ -116,12 +127,7 @@
         </tbody>
     </table>
 
-    <table class="subscription-details">
-        <tr>
-            <th>Subscription AOI Size (km<sup>2</sup>):</th>
-            <td><input type="number" id="subscription-aoi-size" /></td>
-        </tr>
-    </table>
+    
     
     <table class="summary">
         <tr>
