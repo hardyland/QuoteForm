@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100px;
+        }
+        .quote-details, .customer-details, .sales-rep-details, .product-details, .summary {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .quote-details th, .quote-details td, .customer-details th, .customer-details td, .sales-rep-details th, .sales-rep-details td, .product-details th, .product-details td, .summary th, .summary td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        .summary th, .summary td {
+            text-align: right;
+        }
+        .new-offers {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Company Logo">
+        <h1>Quote Sheet</h1>
+    </div>
+    
+    <table class="quote-details">
+        <tr>
+            <th>Quote Number:</th>
+            <td><input type="text" id="quote-number" /></td>
+        </tr>
+        <tr>
+            <th>Date:</th>
+            <td><input type="date" id="date" /></td>
+        </tr>
+    </table>
+    
+    <table class="customer-details">
+        <tr>
+            <th>Customer Name:</th>
+            <td><input type="text" id="customer-name" /></td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td><input type="text" id="address" /></td>
+        </tr>
+        <tr>
+            <th>Contact Information:</th>
+            <td><input type="text" id="contact-info" /></td>
+        </tr>
+    </table>
+    
+    <table class="sales-rep-details">
+        <tr>
+            <th>Sales Rep Name:</th>
+            <td><input type="text" id="sales-rep-name" /></td>
+        </tr>
+        <tr>
+            <th>Sales Rep Contact:</th>
+            <td><input type="text" id="sales-rep-contact" /></td>
+        </tr>
+    </table>
+    
+    <table class="product-details">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+                <th>Discount</th>
+                <th>Discounted Price</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="product-name-1" /></td>
+                <td><input type="text" id="description-1" /></td>
+                <td><input type="number" id="quantity-1" /></td>
+                <td><input type="number" id="unit-price-1" /></td>
+                <td><input type="number" id="total-price-1" /></td>
+                <td><input type="number" id="discount-1" /></td>
+                <td><input type="number" id="discounted-price-1" /></td>
+                <td><input type="number" id="savings-1" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="product-name-2" /></td>
+                <td><input type="text" id="description-2" /></td>
+                <td><input type="number" id="quantity-2" /></td>
+                <td><input type="number" id="unit-price-2" /></td>
+                <td><input type="number" id="total-price-2" /></td>
+                <td><input type="number" id="discount-2" /></td>
+                <td><input type="number" id="discounted-price-2" /></td>
+                <td><input type="number" id="savings-2" /></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="summary">
+        <tr>
+            <th>Subtotal:</th>
+            <td><input type="number" id="subtotal" /></td>
+        </tr>
+        <tr>
+            <th>Total Discounts:</th>
+            <td><input type="number" id="total-discounts" /></td>
+        </tr>
+        <tr>
+            <th>Grand Total:</th>
+            <td><input type="number" id="grand-total" /></td>
+        </tr>
+    </table>
+    
+    <div class="new-offers">
+        <h3>New Offers:</h3>
+        <textarea id="new-offers" rows="4" cols="50"></textarea>
+    </div>
+    
+    <div class="footer">
+        <h3>Terms and Conditions</h3>
+        <p>Payment details and other relevant information can be included here.</p>
+    </div>
+</body>
+</html>
